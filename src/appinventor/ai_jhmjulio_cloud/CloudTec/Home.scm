@@ -1,0 +1,4 @@
+#|
+$JSON
+{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"208","Source":"Form","Properties":{"$Name":"Home","$Type":"Form","$Version":"27","AppName":"TelaLogin","ScreenOrientation":"sensor","ShowListsAsJson":"False","Sizing":"Fixed","Title":"CloudTecApp","TitleVisible":"False","Uuid":"0","$Components":[{"$Name":"HorizontalArrangement1","$Type":"HorizontalArrangement","$Version":"3","BackgroundColor":"&H00FFFFFF","Width":"-2","Uuid":"-1561475278","$Components":[{"$Name":"lblTitulo","$Type":"Label","$Version":"5","FontSize":"20","Width":"-2","Text":"By Julio M. (CTA)","TextColor":"&HFF888888","Uuid":"-1608672311"},{"$Name":"btnSair","$Type":"Button","$Version":"6","FontBold":"True","FontSize":"15","Height":"55","Width":"55","Image":"out.png","Shape":"3","Uuid":"-1622937846"}]},{"$Name":"WebViewer1","$Type":"WebViewer","$Version":"10","HomeUrl":"https:\/\/sites.google.com\/view\/cloudtec","IgnoreSslErrors":"True","Uuid":"1901472815"}]}}
+|#

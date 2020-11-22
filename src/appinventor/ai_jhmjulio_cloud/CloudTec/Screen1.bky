@@ -1,0 +1,160 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="21" x="-750" y="-181">
+    <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen1</field>
+    <statement name="DO">
+      <block type="component_method" id="E[o*]{Y;UkEJiEZZ#Qor">
+        <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="aleNotification"></mutation>
+        <field name="COMPONENT_SELECTOR">aleNotification</field>
+        <value name="ARG0">
+          <block type="text" id="1SV?^`G$;OX4csTbosQ#">
+            <field name="TEXT">Aplicativo web para acesso ao CloudTec site. Aceito com os termos "Política de Privacidade".</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="DDEUI.F7B`T3Z%MH$,$y">
+            <field name="TEXT">CloudTecApp (By Julio M.)</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="text" id="`qTvTllOX:F!ajy~Vy?z">
+            <field name="TEXT">Aceito</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id=";BFp{fU{6%KUF:nYS]d7" x="-747" y="-22">
+    <mutation component_type="Button" is_generic="false" instance_name="btnEntrar" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btnEntrar</field>
+    <statement name="DO">
+      <block type="controls_if" id="74" inline="false">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_operation" id="75" inline="false">
+            <mutation items="2"></mutation>
+            <field name="OP">AND</field>
+            <value name="A">
+              <block type="logic_compare" id="76">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="77">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="txtEmail"></mutation>
+                    <field name="COMPONENT_SELECTOR">txtEmail</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="78">
+                    <field name="TEXT">contatocta@outlook.com</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="logic_compare" id="79">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="component_set_get" id="80">
+                    <mutation component_type="PasswordTextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="passSenha"></mutation>
+                    <field name="COMPONENT_SELECTOR">passSenha</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="text" id="81">
+                    <field name="TEXT">cloudtecapp</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_openAnotherScreen" id=")L9uG@k3{U;pg_zPTOo9">
+            <value name="SCREEN">
+              <block type="text" id=",{3^hinQ1,:iL}YdWfFf">
+                <field name="TEXT">Home</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_set_get" id="87" inline="false">
+            <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="lblErro"></mutation>
+            <field name="COMPONENT_SELECTOR">lblErro</field>
+            <field name="PROP">Visible</field>
+            <value name="VALUE">
+              <block type="logic_false" id="88">
+                <field name="BOOL">TRUE</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="89" inline="false">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="lblErro"></mutation>
+                <field name="COMPONENT_SELECTOR">lblErro</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text" id="90">
+                    <field name="TEXT">Login/Senha com erro. Tente novamente!</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="I?hTICfNj@cTpgYhK.Rt" x="-749" y="217">
+    <mutation component_type="Button" is_generic="false" instance_name="btnSenha" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">btnSenha</field>
+    <statement name="DO">
+      <block type="component_method" id="MW)VPp1KDKj$~TlA?Fed">
+        <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="aleNotification"></mutation>
+        <field name="COMPONENT_SELECTOR">aleNotification</field>
+        <value name="ARG0">
+          <block type="text" id="(:ols%2Lk2GLA1?k6j-=">
+            <field name="TEXT">Por favor, envie um email para: "contatocta@outlook.com". Dica: nome app!</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="j243U_xx.E+:TOM8`)qQ">
+            <field name="TEXT">Senha:</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="text" id="hCwfpoo/oQi;lqu_(~m}">
+            <field name="TEXT">OK</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="00akG4pZE;{Ya9_WjMyg" x="-754" y="390">
+    <mutation component_type="Button" is_generic="false" instance_name="btnSenha" event_name="LongClick"></mutation>
+    <field name="COMPONENT_SELECTOR">btnSenha</field>
+    <statement name="DO">
+      <block type="component_method" id="z9mq]SmMBH.GA.KoZ6KN">
+        <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="aleNotification"></mutation>
+        <field name="COMPONENT_SELECTOR">aleNotification</field>
+        <value name="ARG0">
+          <block type="text" id="QK2@5I],zJEk{R;Bs.`6">
+            <field name="TEXT">Email: contatocta@outlook.com / Dica: nome app!</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block type="text" id="SwGIsYQ_gQpAo0{U.}nM">
+            <field name="TEXT">Email &amp; Senha:</field>
+          </block>
+        </value>
+        <value name="ARG2">
+          <block type="text" id="SF9U;s%ZV5~Ok8CPB9CS">
+            <field name="TEXT">OK</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="208" language-version="33"></yacodeblocks>
+</xml>
